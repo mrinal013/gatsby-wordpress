@@ -21,7 +21,7 @@ const BlogPostTemplate = ({ data }) => (
     )}
     <h1>{data.wordpressPost.title}</h1>
     <p>Written on {data.wordpressPost.date}</p>
-    <p dangerouslySetInnerHTML={{ __html: data.wordpressPost.content }}></p>
+    <div dangerouslySetInnerHTML={{ __html: data.wordpressPost.content }}></div>
   </Layout>
 )
 
